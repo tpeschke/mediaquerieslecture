@@ -26,6 +26,60 @@
     display: none;
 }
 
+
+.square {
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+    background: red
+}
+
+.square-spin {
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.transition {
+    height: 50px;
+    width: 50px;
+    margin: 100px auto;
+    background: lightcoral;
+    transition: .6s;
+}
+
+.transition:hover {
+    height: 150px;
+    width: 150px;
+    background: lightblue
+}
+
+.menu {
+    width: 200px;
+    height: 100vh;
+    background: lightblue;
+    position: absolute;
+    right: -200px;
+    top: 55px;
+    transition: .6s;
+}
+
+.slide {
+    right: 0;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
 @media (max-width: 900px) {
     .links {
         visibility: hidden;
@@ -33,5 +87,9 @@
     
     .ham-menu {
         display: inline;
+    }
+
+    .menu {
+        right: 0
     }
 }

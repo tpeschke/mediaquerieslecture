@@ -1,0 +1,41 @@
+.nav {
+  height: 55px;
+  width: 100%;
+  background: chocolate
+}
+
+.navTwo {
+  height: 200px;
+  width: 100%;
+  background: beige
+}
+
+@media (min-width: 300px) {
+  .nav {
+    background: lightblue;
+  }   
+}
+
+@media (min-width: 500px) {
+  .nav{
+    background: lightcoral
+  }
+}
+
+@media (min-width: 1000px) {
+  .titleOne {
+    font-size: 50px
+  }
+}
+
+@media (max-width: 800px) {
+  .navTwo {
+    background: lightgray
+  }
+}
+
+@media (max-width: 705px) {
+  .titleTwo {
+    color: white;
+  }
+}
